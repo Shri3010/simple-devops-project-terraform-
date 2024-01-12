@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #f0f0f0;
+            }
+            100% {
+                background-color: #e6e6e6;
+            }
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        header h1 {
+            margin-bottom: 0.5em;
+            font-size: 2.5em;
+            color: #3498db;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #95a5a6;
+        }
+
+        img.profile-pic {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            animation: rotateAnimation 5s infinite linear;
+        }
+
+        @keyframes rotateAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeInAnimation 1s ease-in-out;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project h2 {
+            color: #e74c3c;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-top: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shri Balaji Karthik Mathivanan</h1>
+        <p>DevOps Engineer Portfolio: Bridging Development and Operations for Seamless Deployment</p>
+        <img class="profile-pic" src="http://myterraforms3bucketforproject2024.s3-website-us-east-1.amazonaws.com/profile.png" alt="Shri">
+        <div>
+            <a href="https://github.com/Shri3010?tab=repositories" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/shribalajikarthik/" target="_blank">LinkedIn</a>
+            <a href="shribalajikarthik@gmail.com">Email</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I am a results-driven DevOps engineer with a passion for building and optimizing end-to-end deployment pipelines. With a strong background in both development and operations, I thrive on creating environments where code is not just written but delivered with speed, reliability, and quality.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h2>Azure Data Factory</h2>
+            <p>In this project, I utilized the capabilities of Azure Data Factory to effortlessly extract data from an API, establishing a robust data pipeline that aligns with Azure's cutting-edge features. The extracted data seamlessly made its way to Azure Data Lake Storage, laying the groundwork for a transformative data processing journey.</p>
+            
+        </div>
+
+        <div class="project">
+            <h2>DevOps Project</h2>
+            <p>In this project, I undertook the task of creating a static portfolio website and leveraging Terraform to seamlessly deploy and manage the infrastructure on AWS. The primary goal was to showcase my skills and accomplishments in a professional and accessible manner while incorporating industry best practices for infrastructure as code.</p>
+            
+        </div>
+
+        <!-- Add more projects as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div>
+            <a href="https://github.com/Shri3010?tab=repositories" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/shribalajikarthik/" target="_blank">LinkedIn</a>
+            <a href="shribalajikarthik@gmail.com">Email</a>
+        </div>
+    </footer>
+
+</body>
+</html>
